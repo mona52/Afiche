@@ -7,7 +7,7 @@ import ru.netology.manager.MovieManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MovieManagerTest5 {
+public class MovieManagerExtTest {
     private int currentNumberMovies = 5;
     private MovieManager manager = new MovieManager(currentNumberMovies);
 
