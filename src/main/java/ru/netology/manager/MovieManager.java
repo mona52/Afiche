@@ -13,7 +13,12 @@ public class MovieManager {
         this.numberMovies = numberMovies;
     }
 
-    public MovieManager(int numberMovies) { }
+    public MovieManager(int currentNumberMovies) {
+        if (currentNumberMovies > numberMovies) {
+            currentNumberMovies = numberMovies;
+        }
+        setNumberMovies(currentNumberMovies);
+    }
 
     private Movie[] items = new Movie[0];
 
