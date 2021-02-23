@@ -20,7 +20,6 @@ class MovieManagerTest {
 
     @BeforeEach
     public void setUp() {
-        //manager.setNumberMovies(currentNumberMovies);
         manager.add(first);
         manager.add(second);
         manager.add(third);

@@ -14,10 +14,12 @@ public class MovieManager {
     }
 
     public MovieManager(int currentNumberMovies) {
+        System.out.println(currentNumberMovies);
         if (currentNumberMovies > numberMovies) {
             currentNumberMovies = numberMovies;
         }
         setNumberMovies(currentNumberMovies);
+        System.out.println(currentNumberMovies);
     }
 
     private Movie[] items = new Movie[0];
