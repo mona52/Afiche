@@ -4,6 +4,15 @@ import ru.netology.domain.Movie;
 
 public class MovieManager {
     private int numberMovies = 10;
+    private Movie[] items = new Movie[0];
+
+    public Movie[] getItems() {
+        return items;
+    }
+
+    public void setItems(Movie[] items) {
+        this.items = items;
+    }
 
     public int getNumberMovies() {
         return numberMovies;
@@ -14,15 +23,9 @@ public class MovieManager {
     }
 
     public MovieManager(int currentNumberMovies) {
-        System.out.println(currentNumberMovies);
-        if (currentNumberMovies > numberMovies) {
-            currentNumberMovies = numberMovies;
-        }
         setNumberMovies(currentNumberMovies);
-        System.out.println(currentNumberMovies);
     }
 
-    private Movie[] items = new Movie[0];
 
     public void add(Movie item) {
         // создаём новый массив размером на единицу больше
@@ -47,7 +50,7 @@ public class MovieManager {
             resultLength = getNumberMovies();
         }
 
-        System.out.println("Длина ленты " +resultLength);
+        System.out.println("Длина ленты " + resultLength);
 
         Movie[] result = new Movie[resultLength];
         // перебираем массив в прямом порядке

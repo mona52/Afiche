@@ -8,7 +8,7 @@ import ru.netology.manager.MovieManager;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class MovieManagerTest {
-    private int currentNumberMovies = 11;
+    private int currentNumberMovies = 10;
     private MovieManager manager = new MovieManager(currentNumberMovies);
 
     private Movie first = new Movie(1, "//*", "first", "comedy");
